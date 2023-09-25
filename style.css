@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none; /* Remove default button border */
+  outline: none; /* Remove button outline when clicked */
+}
+
+body {
+  text-align: center;
+}
+
+#container {
+  position: relative;
+  top: 20vh;
+}
+
+.lines {
+  width: 120px;
+  height: 120px;
+  background-color: whitesmoke;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 2rem;
+  background: transparent;
+  vertical-align: top; /* Add this property to align buttons to the top */
+}
+
+/* Add borders to specific buttons */
+#line1,
+#line2 {
+  border-right: 2px solid black;
+}
+
+#line3,
+#line6 {
+  border-bottom: 2px solid black;
+}
+
+#line4 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#line5 {
+  border: 2px solid black;
+}
+
+#line7,
+#line8 {
+  border-right: 2px solid black;
+}
+
+#line9 {
+  /* No additional border for the last button in the row */
+}
+
+#p1 {
+  font-size: 30px;
+  position: relative;
+  top: 5vh;
+  margin-right: 100px;
+  text-decoration: pink;
+  /* text-shadow: 6px 6px 6px blue; */
+}
+
+#p2 {
+  font-size: 30px;
+  position: relative;
+  top: 5vh;
+  margin-left: 100px;
+  /* text-shadow: 6px 6px 6px green; */
+}
+
+.reset {
+  position: relative;
+  top : 25vh;
+  font-size: 25px;
+  border: 1px solid black
+}
+
+
+.winnerName{
+
+position: relative;
+font-size: 4rem;
+bottom : 100px;
+letter-spacing: 2rem;
+}
