@@ -1,5 +1,6 @@
 let element = document.querySelectorAll(".lines");
 let reset = document.querySelector(".reset");
+let winn = document.querySelector(".winnerName");
 
 let count = 0;
 
@@ -82,16 +83,19 @@ function disableAllButtons() {
 
 // Assuming 'reset' and 'element' are properly defined references
 reset.addEventListener("click", () => {
+  winn.innerHTML = "";
   element.forEach((box) => {
     box.removeAttribute("disabled");
 
     box.innerHTML = "";
   });
+
+
   count = 0;
 });
 
 function displayWinner() {
   count % 2 === 1
-    ? (document.querySelector(".winnerName").innerHTML = "Player(X) Wins")
-    : (document.querySelector(".winnerName").innerHTML = "Player(O) Wins");
+    ? (winn.innerHTML = "Player(X) Wins")
+    : (winn.innerHTML = "Player(O) Wins");
 }
